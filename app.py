@@ -15,7 +15,7 @@ if not st.session_state.api_accepted:
         ""
     )
     openai_api_key = st.text_input("OpenAI API Key", type="password")
-    st.info("우선 OpenAI API Key를 입력해라!", icon="🗝️")
+    st.info("우선 OpenAI API Key를 입력하세요.", icon="🗝️")
 
     if openai_api_key:
         st.session_state.api_accepted = True
