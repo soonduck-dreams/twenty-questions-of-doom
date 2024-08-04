@@ -8,11 +8,11 @@ st.title("지옥의 스무고개")
 st.session_state.api_accepted = True
 st.session_state.openai_api_key = st.secrets['openai_api_key']
 
-if "api_accepted" not in st.session_state:
-    st.session_state.api_accepted = False
+# if "api_accepted" not in st.session_state:
+#     st.session_state.api_accepted = False
 
-if "openai_api_key" not in st.session_state:
-    st.session_state.openai_api_key = ''
+# if "openai_api_key" not in st.session_state:
+#     st.session_state.openai_api_key = ''
 
 if not st.session_state.api_accepted:
     st.write(
