@@ -4,6 +4,10 @@ import random
 
 st.title("지옥의 스무고개")
 
+# get openai api key from env. vars.
+st.session_state.api_accepted = True
+st.session_state.openai_api_key = st.secrets.openai_api_key
+
 if "api_accepted" not in st.session_state:
     st.session_state.api_accepted = False
 
